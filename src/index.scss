@@ -1,0 +1,12 @@
+// MIXIN
+@mixin transition($settings) {
+    -webkit-transition: $settings;
+    -moz-transition: $settings;
+    -ms-transition: $settings;
+    -o-transition: $settings;
+    transition: $settings;
+}
+
+// COLORS
+$main-color: #0d6efd;
+$border-color: #3e4141;

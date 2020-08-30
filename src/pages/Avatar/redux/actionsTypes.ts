@@ -1,0 +1,7 @@
+// SAGA
+export const UPLOAD_AVATAR = "UPLOAD_AVATAR"
+
+// REDUX
+export const SET_AVATAR = "SET_AVATAR"
+export const SET_PROGRESS = "SET_PROGRESS"
+export const COMPLETED_UPLOAD = "COMPLETED_UPLOAD"

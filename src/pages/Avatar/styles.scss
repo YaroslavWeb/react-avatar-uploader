@@ -1,0 +1,84 @@
+@import "../../index.scss";
+
+.avatar {
+    display: flex;
+    justify-content: center;
+
+    &__input {
+        display: none;
+    }
+
+    &__label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 100%;
+        width: 16rem;
+        height: 16rem;
+
+        .avatar__overlay {
+            position: absolute;
+            opacity: 0;
+            background: rgba($main-color, 0.7);
+            border-radius: 100%;
+            width: 15rem;
+            height: 15rem;
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include transition(opacity 0.5s linear);
+        }
+
+        .avatar__image {
+            width: 15rem;
+            height: 15rem;
+            border-radius: 100%;
+            border: 2px dashed $border-color;
+        }
+
+        .avatar__loading {
+            display: flex;
+            width: 16rem;
+            height: 16rem;
+            position: absolute;
+
+            span {
+                background: rgba($main-color, 0.7);
+                width: 16rem;
+                height: 16rem;
+                border-radius: 100%;
+                position: absolute;
+                @include transition(clip 0.05s linear);
+                z-index: -1;
+            }
+        }
+        &:hover {
+            .avatar__overlay {
+                opacity: 1;
+            }
+
+            .avatar__image {
+                border: 2px solid $border-color;
+            }
+        }
+    }
+}
+
+.gallery {
+    &__image {
+        width: 14rem;
+        height: 14rem;
+        border-radius: 20%;
+        border: 2px solid $border-color;
+        cursor: pointer;
+        @include transition(all .1s linear);
+    }
+    &__image:hover {
+        border-radius: 30%;
+    }
+    &__image:active {
+        opacity: .75;
+    }
+}
