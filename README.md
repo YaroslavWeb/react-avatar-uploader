@@ -1,4 +1,5 @@
 # React avatar uploader (test-task)
+![](https://prnt.sc/u8e4jc)
 
 ## Stack
 
